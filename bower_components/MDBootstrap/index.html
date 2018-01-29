@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Glenn Lopez FEF Final</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <a class="navbar-brand" href="#">Expand at md</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+          
+                <div class="collapse navbar-collapse" id="navbarsExample04">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                      <div class="dropdown-menu" aria-labelledby="dropdown04">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-md-0">
+                    <input class="form-control" type="text" placeholder="Search">
+                  </form>
+                </div>
+              </nav>
+    <div class="jumbotron text-center" style="background-color:rgb(38, 84, 184)">
+        <h1>Glenn Lopez Full Stack Developer</h1>
+        <p>My first Bootstrap Page!</p>
+    </div>
+    </div>
+    <section class="section pb-3 text-center">
+        <h1 class="section-heading h1 pt-4">FEF Final</h1>
+        <p class="section-description">This is my first Bootstrap Web Page.</p>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col col-lg-2">
+                </div>
+                <div class="col-12 col-md-auto">
+                    <div class="avatar">
+                        <img src="img/glenn1.gif" alt="avatar" class="rounded-circle img-responsive">
+                    </div>
+                    <div class="card-">
+                        <h4 class="card-title mt-1">Glenn Lopez</h4>
+                        <hr>
+                        <p>
+                            <i class="fa fa-quote-left"></i> I believe Greatness awaits all who seek it.</p>
+                    </div>
+                </div>
+                <div class="col col-lg-2">
+                </div>
+            </div>
+        </div>
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item">Proficient with Adobe Software</li>
+            <li class="list-group-item">Getting better with HTML</li>
+            <li class="list-group-item">New to JavaScript</li>
+            <li class="list-group-item">Learning to incorperate Bootstrap</li>
+            <li class="list-group-item">Learning CSS</li>
+        </ul>
+
+    </section>
+     
+    <div id="gitHubRepo">
+            <h1>GitHubRepos</h1>
+            <ul id="myRepos"></ul>
+            <button class="button" type="button" onclick="loadRepo()">My GitHub Repos</button>
+        </div>
+    
+
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+    <script type="text/javascript" src="js/popper.min.js"></script>
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <footer class="page-footer blue center-on-small-only">
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="title">Glenn Lopez</h5>
+                    <p class="email">E-mail Me @ glenn.lopez2015@yahoo.com
+                        <a href="mailto:glenn.lopez2015@yahoo.com">
+                            <i class="fa fa-envelope-square" aria-hidden="true"></i>
+                        </a>
+                    </p>
+                </div>
+                    <div class="">
+                        <div class="social-icons">
+                            <a class="icons-sm slack-ic" href="https://codercampstroops.slack.com/team/U8JL6VALT">
+                                <i class="fa fa-slack"> </i>
+                            </a>
+                            <a class="icons-sm git-ic" href="https://github.com/GLopez4891">
+                                <i class="fa fa-github"> </i>
+                            </a>
+                            <a class="icons-sm li-ic" href="https://www.linkedin.com/in/glenn-lopez-333867153/">
+                                <i class="fa fa-linkedin"> </i>
+                            </a>
+                            <a class="icons-sm fb-ic" href="https://www.facebook.com/glenn.lopez.758">
+                                <i class="fa fa-facebook"> </i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container-fluid">
+                    © 2015 Copyright:
+                    <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
+
+                </div>
+            </div>
+    </footer>
+    <script>
+    // https://api.github.com/glenn/GLopez4891/repos
+
+    function loadRepo(url, callback) {
+    
+    let output = '';
+    const xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            JSON.parse(this.responseText).map( repo => output += `<li><a href="${repo.html_url}" target="_blank">${repo.name}</a></li>`);
+        //console.log(JSON.parse(this.responseText));      
+        document.getElementById("myRepos").innerHTML = output;
+    }
+    };
+    xhttp.open("GET","https://api.github.com/users/GLopez4891/repos");
+    xhttp.send();
+
+
+    }
+
+    </script>
+    <script>
+        $(document).ready(function(){
+        $("h1").click(function(){
+            $(this).toggleClass("blue");
+        });
+    });
+    </script>
+</body>
+
+</html>

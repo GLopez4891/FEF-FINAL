@@ -1,0 +1,42 @@
+body {
+  background-color: rgb(157, 233, 252);
+}
+button {
+  border-radius: 25px;
+}
+.wrap {
+    margin: 0px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .container {
+    display: inline-block;
+    width: 33%;
+  }
+  .social-icons {
+    text-align: right;
+  }
+  .social-icons a{
+    font-size: 30px;
+    transition: all 300ms;
+    display: inline-block;
+    margin: 5px 10px;
+  }
+  .social-icons a:hover{
+    transform: scale(2);    
+
+  }
+  .box {
+    border-radius: 50%;
+    height: 40px;
+    margin: 30px auto;
+    width: 40px;
+  }
+  .btn.btn-email {
+      background-color: rgb(141, 180, 216);
+  }
+  .blue {
+    background-color: blue;
+    font-size: xx-large;
+}
